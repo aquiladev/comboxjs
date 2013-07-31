@@ -1,10 +1,16 @@
+/* ========================================================================
+ * ComboxJs: combox.js v0.1 - 2013-31-07
+ * https://github.com/aquiladev/comboxjs.git
+ * ========================================================================
+ * Copyright 2013 Sergii Bomko.
+ * ======================================================================== */
+
 (function( $, undefined ) { 'use strict';
 	$.widget('custom.combox', {
 		version: '0.1',
 		defaultElement: "<div>",
 		options: {
-			minHeight: 20,
-			minWidth: 150
+			minHeight: 20
 		},
 		
 		_create: function() {
