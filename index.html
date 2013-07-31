@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/combox.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/combox.js"></script>
+	</head>
+	<body>
+		<div class="combox">
+			<input id="tstInput" type="text" value="as" style="width: 320px;"/>
+			<select id="tstSelect" style="width: 400px;">
+				<option value='1'>1</option>
+				<option value='2'>2</option>
+				<option value='3'>3</option>
+			</select>
+			<input type="text" value="lol" style="width: 120px;"/>
+		</div>
+		
+		<div id="combox">
+			<select id="tst1Select" style="width: 200px;">
+				<option value='1'>1</option>
+				<option value='2'>2</option>
+				<option value='3'>3</option>
+			</select>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.combox').combox();
+				$('#combox').combox();
+			});
+		</script>
+	</body>
+</html>

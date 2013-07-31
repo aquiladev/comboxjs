@@ -1,0 +1,59 @@
+.ui-combox {
+	display: table;
+	border: 1px solid #cccccc;
+}
+
+.ui-combox-input,
+.ui-combox-select {
+	display: table-cell;
+	border: none;
+	border-right: 1px solid #cccccc;
+}
+
+.ui-combox  input {
+	line-height: normal;
+	border: none;
+}
+
+.ui-combox  input,
+.ui-combox select {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+    font-size: 100%;
+	outline: none;
+}
+
+.ui-combox-select {
+	position: relative;
+}
+
+.ui-combox div {
+    vertical-align: middle;
+}
+
+.ui-combox .ui-combox-select ul{
+	position: absolute;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	list-style: none;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	background-clip: padding-box;
+}
+
+.ui-combox .ui-combox-pointer {
+	position: absolute;
+	border-left: 1px solid #cccccc;
+	right: 0;
+	top: 2px;
+	width: 20px;
+	background:transparent url('../img/arrow-down.png') 50% 50% no-repeat;
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
