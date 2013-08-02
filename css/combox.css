@@ -61,6 +61,7 @@
 	border: none;
 	outline: none;
 	height: 26px;
+	line-height: 26px;
 	background: transparent;
 	-webkit-appearance: none;
 	-moz-box-sizing: border-box;
@@ -81,6 +82,7 @@
 }
 
 .ui-combox .ui-combox-select li {
+	line-height: 26px;
 	padding: 0 8px;
 }
 

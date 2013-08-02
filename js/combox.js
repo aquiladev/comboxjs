@@ -32,7 +32,7 @@
 					.css({
 						'top': selectDiv.height(),
 						'left': -1,
-						'width': selectDiv.width()
+						'width': selectDiv.outerWidth()
 					})
 					.toggle();
 			},
@@ -108,7 +108,7 @@
 		},
 		
 		_buildSelectHtml: function (field) {
-			var height = Math.max(this.options.minHeight, this.combox.height());
+			var height = Math.max(this.options.minHeight, field.height());
 			var width = Math.max(this.options.minSelectsWidth, field.width());
 			var selectWrapper = $('<div></div>')
 				.attr({ 'src-fld': field.attr('id') })
@@ -116,11 +116,12 @@
 				.css({
 					'width': width,
 					'min-width': this.options.minSelectsWidth,
-					'height': height,
 					'max-height': this.options.maxHeight,
-					'line-height': height + 'px'
 				})
-				.append('<label></label>');
+				.append(
+					$('<label></label>')
+						.css({'line-height': height + 'px'})
+				);
 			
 			//adding pointer
 			$('<div></div>')
@@ -130,10 +131,6 @@
 
 			//adding options
 			var optionsWrapper = $('<ul></ul>')
-				.css({
-					'width': width,
-					'min-width': this.options.minSelectsWidth
-				})
 				.appendTo(selectWrapper);
 
 			field
