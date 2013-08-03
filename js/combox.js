@@ -103,8 +103,8 @@
 					'max-height': this.options.maxHeight,
 					'min-width': this.options.minInputsWidth
 				});
-			field.wrap(inputWrapper)
-				.width('100%');
+			field.css('width', '100%')
+				.wrap(inputWrapper);
 		},
 		
 		_buildSelectHtml: function (field) {
