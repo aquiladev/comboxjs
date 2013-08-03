@@ -3,19 +3,14 @@ ComboxJs
 #####jQuery UI widget
 ---------------------
 
-comboxjs - это widget который склеивает несколько контролов в один. 
-Он поможет вписать несколько контролов одного контекста в ваш дизайн.
-Выглядит это приблизительно так: <br />
+Comboxjs is a widget qlueing together several controls in one. It will help you to insert a few controls of a one context into your design. That's how it's going to look like: <br />
 ![combox](img/combox.png)
 
-Для использования его, достаточно описать все контролы в разметке и обернуть их в &lt;div&gt;
-После чего создайте combox на этом &lt;div&gt; <code>$('div').combox()</code> 
+In order to use it, all you have to do is describing all the controls in the layout and wrapping in &lt;div&gt;
+Then just create the combox on this &lt;div&gt; <code>$('div').combox()</code> 
 
-Не забудьте указать id всем контролам, которые хотите склеить.
-combox умеет склеивать input[type=text] и select
+Don't forget to indicate ID's for all the controls that you are going to glue together. Combox is capable of glueing together input[type=text] and select
 
-Колличество контролов не ограничено пока что. 
+For now, the quantity of controls is unlimited.
 
-Пользуйтесь если кому пригдится, удачи!
-
-//Переведу на english позже
+Use it if you need it! Good luck!
