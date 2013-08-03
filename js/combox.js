@@ -111,7 +111,7 @@
 			var height = Math.max(this.options.minHeight, field.height());
 			var width = Math.max(this.options.minSelectsWidth, field.width());
 			var selectWrapper = $('<div></div>')
-				.attr({ 'src-fld': field.attr('id') })
+				.attr({'src-fld': field.attr('id')})
 				.addClass('ui-combox-select')
 				.css({
 					'width': width,
