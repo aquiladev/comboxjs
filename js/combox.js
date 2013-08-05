@@ -116,7 +116,7 @@
 				.css({
 					'width': width,
 					'min-width': this.options.minSelectsWidth,
-					'max-height': this.options.maxHeight,
+					'max-height': this.options.maxHeight
 				})
 				.append(
 					$('<label></label>')
