@@ -59,7 +59,7 @@
 			combox.find('input[type=text], select[id]')
 				.each(function () {
 					var field = $(this);
-					if (field.is("input")) {
+					if (field.is('input')) {
 						obj._buildInputHtml(field);
 					} else {
 						obj._buildSelectHtml(field);
@@ -68,12 +68,12 @@
 		},
 
 		_refresh: function () {
-			var item = this.combox.find(".ui-combox-select li[selected]");
+			var item = this.combox.find('.ui-combox-select li[selected]');
 			if (item.length == 0) {
 				item = this.combox.find('.ui-combox-select li:first');
 			}
 			this._refreshSelect(item);
-			item.removeAttr("selected")
+			item.removeAttr('selected')
 				.parent().hide();
 		},
 		
@@ -85,9 +85,9 @@
 				option = select.find('option:first');
 			}
 			select
-				.children("option:selected")
-				.removeAttr("selected")
-				.prop('selected', false);
+				.children('option:selected')
+				.removeAttr('selected')
+				.removeProp('selected');
 			option
 				.attr('selected', 'selected')
 				.prop('selected', true);
