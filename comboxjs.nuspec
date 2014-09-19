@@ -6,7 +6,7 @@
 		<authors>Sergii Bomko</authors>
 		<owners>Sergii Bomko</owners>
 		<title>ComboxJS</title>
-		<description>ComboxJS is a widget gluing together several controls in one.</description>
+		<description>ComboxJS is a widget for gluing together several controls.</description>
 		<language>en-US</language>
 		<projectUrl>https://github.com/aquiladev/comboxjs</projectUrl>
 		<licenseUrl>https://raw.githubusercontent.com/aquiladev/comboxjs/master/LICENSE</licenseUrl>
