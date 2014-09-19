@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>ComboxJS</id>
+		<version>0.1</version>
+		<authors>Sergii Bomko</authors>
+		<owners>Sergii Bomko</owners>
+		<title>ComboxJS</title>
+		<description>ComboxJS is a widget gluing together several controls in one.</description>
+		<language>en-US</language>
+		<projectUrl>https://github.com/aquiladev/comboxjs</projectUrl>
+		<licenseUrl>https://raw.githubusercontent.com/aquiladev/comboxjs/master/LICENSE</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<copyright>© 2014 Sergii Bomko</copyright>
+		<tags>javascript widget control</tags>
+		<dependencies>
+			<group>
+				<dependency id="jQuery.UI.Combined" version="1.11.1" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="js\*.*" target="content\scripts" />
+		<file src="css\*.*" target="content\content\styles" />
+		<file src="images\arrow-down.png" target="content\content\images" />
+	</files>
+</package>
